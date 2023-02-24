@@ -1,1 +1,0 @@
-start C:\mikusdevPrograms\ezsploit\EzSploitV4.exe

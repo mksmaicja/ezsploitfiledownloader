@@ -18,7 +18,7 @@ MainSection:NewTextBox("Type script here", "TextboxInfo", function(txt)
 end)
 
 MainSection:NewButton("Execute", "ButtonInfo", function()
-    loadstring(scripttextbox.Text)()
+    scripttextbox.Text
 end)
 
 MainSection:NewButton("Btools", "add Btools to your inventory", function()

@@ -18,6 +18,6 @@ MainSection:scripttextbox("Type script here", "TextboxInfo", function(txt)
 end)
 
 
-MainSection:NewButton("ButtonText", "ButtonInfo", function()
+MainSection:NewButton("Execute", "ButtonInfo", function()
     loadstring(scripttextbox.Text)()
 end)

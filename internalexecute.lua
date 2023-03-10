@@ -13,7 +13,7 @@ local Window = Library.CreateLib("EzSplot Internal", "Synapse")
 local Tab = Window:NewTab("Main")
 local MainSection = Tab:NewSection("cheats")
 
-MainSection:NewTextBox("Type script here", "TextboxInfo", function(txt)
+MainSection:NewTextBox("Type script here", "TextboxInfo", function(lua)
 	
 end)
 

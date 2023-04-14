@@ -1,6 +1,0 @@
-wait(1.2)
-game.StarterGui:SetCore("SendNotification", {
-Title    = "EzSploit is injected";
-Text     = "you can now execute scripts";
-Duration = 5; 
-})

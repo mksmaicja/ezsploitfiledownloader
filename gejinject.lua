@@ -1,3 +1,13 @@
+local queueonteleport = syn and syn.queue_on_teleport or queue_on_teleport or function() end
+
+local telscrt = [[
+    wait(4)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/mikusgszyp/ezsploitfiledownloader/main/gejinject.lua", true))()
+]]
+
+queueonteleport(telscrt)
+
+
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local _1 = Instance.new("TextLabel")
@@ -15,7 +25,7 @@ _1.BackgroundTransparency = 1.000
 _1.Position = UDim2.new(0.00766283507, 0, -0.0135135138, 0)
 _1.Size = UDim2.new(0, 259, 0, 75)
 _1.Font = Enum.Font.SourceSans
-_1.Text = "EzSploit Injected OMG!!?!?!?"
+_1.Text = "EzSploit Injected"
 _1.TextColor3 = Color3.fromRGB(250, 250, 250)
 _1.TextSize = 23.000
 
@@ -25,7 +35,7 @@ _1.Text = "EzSploit by mikusdev"
 
 wait(2.5)
 
-_1.Text = "Script by nicknamez?!?!?!"
+_1.Text = "Script by nicknamez"
 
 wait(2.5)
 Frame:Destroy()

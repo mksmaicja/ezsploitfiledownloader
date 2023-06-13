@@ -297,7 +297,7 @@ WATERlabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 -- Scripts:
 
-local function TEBNCX_fake_script() -- MainBorder.Drag 
+local function RCDHFMX_fake_script() -- MainBorder.Drag 
 	local script = Instance.new('LocalScript', MainBorder)
 
 	script.Parent.Active = true
@@ -305,8 +305,8 @@ local function TEBNCX_fake_script() -- MainBorder.Drag
 	
 	
 end
-coroutine.wrap(TEBNCX_fake_script)()
-local function KRZSCXA_fake_script() -- MainBorder.OpenClose 
+coroutine.wrap(RCDHFMX_fake_script)()
+local function ZYMD_fake_script() -- MainBorder.OpenClose 
 	local script = Instance.new('LocalScript', MainBorder)
 
 	local Open = true
@@ -327,8 +327,8 @@ local function KRZSCXA_fake_script() -- MainBorder.OpenClose
 		end
 	end)
 end
-coroutine.wrap(KRZSCXA_fake_script)()
-local function SJES_fake_script() -- Codebutton.LocalScript 
+coroutine.wrap(ZYMD_fake_script)()
+local function YBBXKI_fake_script() -- Codebutton.LocalScript 
 	local script = Instance.new('LocalScript', Codebutton)
 
 	local Button = script.Parent
@@ -338,8 +338,8 @@ local function SJES_fake_script() -- Codebutton.LocalScript
 		script.Parent.Parent.Parent.FrameSet.Visible = false
 	end)
 end
-coroutine.wrap(SJES_fake_script)()
-local function OKQDRWI_fake_script() -- SettButton.LocalScript 
+coroutine.wrap(YBBXKI_fake_script)()
+local function KEMBBCZ_fake_script() -- SettButton.LocalScript 
 	local script = Instance.new('LocalScript', SettButton)
 
 	local Button = script.Parent
@@ -349,8 +349,8 @@ local function OKQDRWI_fake_script() -- SettButton.LocalScript
 		script.Parent.Parent.Parent.FrameSet.Visible = true
 	end)
 end
-coroutine.wrap(OKQDRWI_fake_script)()
-local function ZMFCVMO_fake_script() -- TextBox.LocalScript 
+coroutine.wrap(KEMBBCZ_fake_script)()
+local function HFZOCZ_fake_script() -- TextBox.LocalScript 
 	local script = Instance.new('LocalScript', TextBox)
 
 	script.Parent.Parent.Parent.Frame.Visible = true
@@ -463,48 +463,7 @@ local function ZMFCVMO_fake_script() -- TextBox.LocalScript
 	
 	local isfocused = false
 	
-	local function onFocusLost()
-		isfocused = false
-		print("EzSploit - Saving Stopped")
-	end
 	
-	local function onFocused()
-		isfocused = true
-		repeat
-			print("EzSploit - AutoSaving.. - Close GUI to stop save(insert)")
-			local selectedtab = readfile("ezsploit\\script.txt")
-	
-			if (selectedtab == "1") then
-				writefile("ezsploit\\script1.txt", script.Parent.Parent.TextBox.Text)
-			end
-	
-			if (selectedtab == "2") then
-				writefile("ezsploit\\script2.txt", script.Parent.Parent.TextBox.Text)
-			end
-	
-			if (selectedtab == "3") then
-				writefile("ezsploit\\script3.txt", script.Parent.Parent.TextBox.Text)
-			end
-	
-			if (selectedtab == "4") then
-				writefile("ezsploit\\script4.txt", script.Parent.Parent.TextBox.Text)
-			end
-	
-			if (selectedtab == "5") then
-				writefile("ezsploit\\script5.txt", script.Parent.Parent.TextBox.Text)
-			end
-	
-			if (selectedtab == "6") then
-				writefile("ezsploit\\script6.txt", script.Parent.Parent.TextBox.Text)
-			end
-	
-			if (selectedtab == "7") then
-				writefile("ezsploit\\script7.txt", script.Parent.Parent.TextBox.Text)
-			end
-			wait(1)
-	
-		until (isfocused == false)
-	end
 	
 	local Open1 = true
 	
@@ -513,18 +472,54 @@ local function ZMFCVMO_fake_script() -- TextBox.LocalScript
 	UserInputService2.InputBegan:Connect(function(KeyCode)
 		if KeyCode.KeyCode == Enum.KeyCode.Insert then 
 			if Open1 == true then
-				onFocused()
+				isfocused = true
 				Open1 = false
+				repeat
+					print("EzSploit - AutoSaving.. - Close GUI to stop save(insert)")
+					local selectedtab = readfile("ezsploit\\script.txt")
+	
+					if (selectedtab == "1") then
+						writefile("ezsploit\\script1.txt", script.Parent.Parent.TextBox.Text)
+					end
+	
+					if (selectedtab == "2") then
+						writefile("ezsploit\\script2.txt", script.Parent.Parent.TextBox.Text)
+					end
+	
+					if (selectedtab == "3") then
+						writefile("ezsploit\\script3.txt", script.Parent.Parent.TextBox.Text)
+					end
+	
+					if (selectedtab == "4") then
+						writefile("ezsploit\\script4.txt", script.Parent.Parent.TextBox.Text)
+					end
+	
+					if (selectedtab == "5") then
+						writefile("ezsploit\\script5.txt", script.Parent.Parent.TextBox.Text)
+					end
+	
+					if (selectedtab == "6") then
+						writefile("ezsploit\\script6.txt", script.Parent.Parent.TextBox.Text)
+					end
+	
+					if (selectedtab == "7") then
+						writefile("ezsploit\\script7.txt", script.Parent.Parent.TextBox.Text)
+					end
+					wait(1)
+	
+				until (isfocused == false)
+				
 			else
-				onFocusLost()
+				isfocused = false
+				print("EzSploit - Saving Stopped")
 				Open1 = true
 			end
 		end
 	end)
 	
 end
-coroutine.wrap(ZMFCVMO_fake_script)()
-local function UIAJI_fake_script() -- Execute.LocalScript 
+coroutine.wrap(HFZOCZ_fake_script)()
+local function SRSTG_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local Button = script.Parent
@@ -535,8 +530,8 @@ local function UIAJI_fake_script() -- Execute.LocalScript
 		
 	end)
 end
-coroutine.wrap(UIAJI_fake_script)()
-local function NLXW_fake_script() -- script1.LocalScript 
+coroutine.wrap(SRSTG_fake_script)()
+local function GANG_fake_script() -- script1.LocalScript 
 	local script = Instance.new('LocalScript', script1)
 
 	local Button = script.Parent
@@ -553,8 +548,8 @@ local function NLXW_fake_script() -- script1.LocalScript
 		script.Parent.Parent.script7.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
 	end)
 end
-coroutine.wrap(NLXW_fake_script)()
-local function SJEBYLM_fake_script() -- script2.LocalScript 
+coroutine.wrap(GANG_fake_script)()
+local function LLQCOYP_fake_script() -- script2.LocalScript 
 	local script = Instance.new('LocalScript', script2)
 
 	local Button = script.Parent
@@ -571,8 +566,8 @@ local function SJEBYLM_fake_script() -- script2.LocalScript
 		script.Parent.Parent.script7.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
 	end)
 end
-coroutine.wrap(SJEBYLM_fake_script)()
-local function LDOO_fake_script() -- script3.LocalScript 
+coroutine.wrap(LLQCOYP_fake_script)()
+local function BEWR_fake_script() -- script3.LocalScript 
 	local script = Instance.new('LocalScript', script3)
 
 	local Button = script.Parent
@@ -589,8 +584,8 @@ local function LDOO_fake_script() -- script3.LocalScript
 		script.Parent.Parent.script7.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
 	end)
 end
-coroutine.wrap(LDOO_fake_script)()
-local function LJWTYK_fake_script() -- script4.LocalScript 
+coroutine.wrap(BEWR_fake_script)()
+local function WJAOO_fake_script() -- script4.LocalScript 
 	local script = Instance.new('LocalScript', script4)
 
 	local Button = script.Parent
@@ -607,8 +602,8 @@ local function LJWTYK_fake_script() -- script4.LocalScript
 		script.Parent.Parent.script7.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
 	end)
 end
-coroutine.wrap(LJWTYK_fake_script)()
-local function WRIA_fake_script() -- script7.LocalScript 
+coroutine.wrap(WJAOO_fake_script)()
+local function SBMTTK_fake_script() -- script7.LocalScript 
 	local script = Instance.new('LocalScript', script7)
 
 	local Button = script.Parent
@@ -625,8 +620,8 @@ local function WRIA_fake_script() -- script7.LocalScript
 		script.Parent.Parent.script1.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
 	end)
 end
-coroutine.wrap(WRIA_fake_script)()
-local function DDUVW_fake_script() -- script6.LocalScript 
+coroutine.wrap(SBMTTK_fake_script)()
+local function GTCMMH_fake_script() -- script6.LocalScript 
 	local script = Instance.new('LocalScript', script6)
 
 	local Button = script.Parent
@@ -643,8 +638,8 @@ local function DDUVW_fake_script() -- script6.LocalScript
 		script.Parent.Parent.script7.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
 	end)
 end
-coroutine.wrap(DDUVW_fake_script)()
-local function ICUTP_fake_script() -- script5.LocalScript 
+coroutine.wrap(GTCMMH_fake_script)()
+local function IOYRT_fake_script() -- script5.LocalScript 
 	local script = Instance.new('LocalScript', script5)
 
 	local Button = script.Parent
@@ -661,8 +656,8 @@ local function ICUTP_fake_script() -- script5.LocalScript
 		script.Parent.Parent.script7.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
 	end)
 end
-coroutine.wrap(ICUTP_fake_script)()
-local function IBKC_fake_script() -- Clear.LocalScript 
+coroutine.wrap(IOYRT_fake_script)()
+local function KMND_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	local Button = script.Parent
@@ -673,8 +668,8 @@ local function IBKC_fake_script() -- Clear.LocalScript
 		
 	end)
 end
-coroutine.wrap(IBKC_fake_script)()
-local function GZXFFM_fake_script() -- FrameSet.LocalScript 
+coroutine.wrap(KMND_fake_script)()
+local function RNCG_fake_script() -- FrameSet.LocalScript 
 	local script = Instance.new('LocalScript', FrameSet)
 
 	local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
@@ -697,8 +692,8 @@ local function GZXFFM_fake_script() -- FrameSet.LocalScript
 	
 	
 end
-coroutine.wrap(GZXFFM_fake_script)()
-local function HUAQ_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(RNCG_fake_script)()
+local function NZWPJDL_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local Button = script.Parent
@@ -709,8 +704,8 @@ local function HUAQ_fake_script() -- TextButton.LocalScript
 		print(script.Parent.Parent.HWID.Text)
 	end)
 end
-coroutine.wrap(HUAQ_fake_script)()
-local function VZSGAY_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(NZWPJDL_fake_script)()
+local function UAETZEX_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local kkshit = "sex"
@@ -730,8 +725,8 @@ local function VZSGAY_fake_script() -- TextButton_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(VZSGAY_fake_script)()
-local function XXLFTEB_fake_script() -- GUIezsploit.LocalScript 
+coroutine.wrap(UAETZEX_fake_script)()
+local function HMCZSI_fake_script() -- GUIezsploit.LocalScript 
 	local script = Instance.new('LocalScript', GUIezsploit)
 
 	script.Parent.Parent.GUIezsploit.ResetOnSpawn = false
@@ -758,4 +753,4 @@ local function XXLFTEB_fake_script() -- GUIezsploit.LocalScript
 	
 	
 end
-coroutine.wrap(XXLFTEB_fake_script)()
+coroutine.wrap(HMCZSI_fake_script)()

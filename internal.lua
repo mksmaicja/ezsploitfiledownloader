@@ -297,7 +297,7 @@ WATERlabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 -- Scripts:
 
-local function AYLU_fake_script() -- MainBorder.Drag 
+local function HNQOW_fake_script() -- MainBorder.Drag 
 	local script = Instance.new('LocalScript', MainBorder)
 
 	script.Parent.Active = true
@@ -305,8 +305,8 @@ local function AYLU_fake_script() -- MainBorder.Drag
 	
 	
 end
-coroutine.wrap(AYLU_fake_script)()
-local function EHAPKYL_fake_script() -- MainBorder.OpenClose 
+coroutine.wrap(HNQOW_fake_script)()
+local function EGCOQWQ_fake_script() -- MainBorder.OpenClose 
 	local script = Instance.new('LocalScript', MainBorder)
 
 	local Open = true
@@ -327,8 +327,8 @@ local function EHAPKYL_fake_script() -- MainBorder.OpenClose
 		end
 	end)
 end
-coroutine.wrap(EHAPKYL_fake_script)()
-local function TOFVOW_fake_script() -- Codebutton.LocalScript 
+coroutine.wrap(EGCOQWQ_fake_script)()
+local function AUFRP_fake_script() -- Codebutton.LocalScript 
 	local script = Instance.new('LocalScript', Codebutton)
 
 	local Button = script.Parent
@@ -338,8 +338,8 @@ local function TOFVOW_fake_script() -- Codebutton.LocalScript
 		script.Parent.Parent.Parent.FrameSet.Visible = false
 	end)
 end
-coroutine.wrap(TOFVOW_fake_script)()
-local function IJZGGK_fake_script() -- SettButton.LocalScript 
+coroutine.wrap(AUFRP_fake_script)()
+local function RIZAPQ_fake_script() -- SettButton.LocalScript 
 	local script = Instance.new('LocalScript', SettButton)
 
 	local Button = script.Parent
@@ -349,8 +349,8 @@ local function IJZGGK_fake_script() -- SettButton.LocalScript
 		script.Parent.Parent.Parent.FrameSet.Visible = true
 	end)
 end
-coroutine.wrap(IJZGGK_fake_script)()
-local function TAGJ_fake_script() -- TextBox.LocalScript 
+coroutine.wrap(RIZAPQ_fake_script)()
+local function LPIMGA_fake_script() -- TextBox.LocalScript 
 	local script = Instance.new('LocalScript', TextBox)
 
 	script.Parent.Parent.Parent.Frame.Visible = true
@@ -493,12 +493,12 @@ local function TAGJ_fake_script() -- TextBox.LocalScript
 		if (selectedtab == "7") then
 			writefile("ezsploit\\script7.txt", script.Parent.Parent.TextBox.Text)
 		end
-		wait(0.3)
+		wait(1.5)
 		
 	until (false)
 end
-coroutine.wrap(TAGJ_fake_script)()
-local function AXHHUMS_fake_script() -- Execute.LocalScript 
+coroutine.wrap(LPIMGA_fake_script)()
+local function KWDMF_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local Button = script.Parent
@@ -509,8 +509,8 @@ local function AXHHUMS_fake_script() -- Execute.LocalScript
 		
 	end)
 end
-coroutine.wrap(AXHHUMS_fake_script)()
-local function AJXM_fake_script() -- script1.LocalScript 
+coroutine.wrap(KWDMF_fake_script)()
+local function URKUTC_fake_script() -- script1.LocalScript 
 	local script = Instance.new('LocalScript', script1)
 
 	local Button = script.Parent
@@ -527,8 +527,8 @@ local function AJXM_fake_script() -- script1.LocalScript
 		script.Parent.Parent.script7.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
 	end)
 end
-coroutine.wrap(AJXM_fake_script)()
-local function WAEMKA_fake_script() -- script2.LocalScript 
+coroutine.wrap(URKUTC_fake_script)()
+local function FFEBPQH_fake_script() -- script2.LocalScript 
 	local script = Instance.new('LocalScript', script2)
 
 	local Button = script.Parent
@@ -545,8 +545,8 @@ local function WAEMKA_fake_script() -- script2.LocalScript
 		script.Parent.Parent.script7.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
 	end)
 end
-coroutine.wrap(WAEMKA_fake_script)()
-local function DFWSR_fake_script() -- script3.LocalScript 
+coroutine.wrap(FFEBPQH_fake_script)()
+local function DKOPPSF_fake_script() -- script3.LocalScript 
 	local script = Instance.new('LocalScript', script3)
 
 	local Button = script.Parent
@@ -563,8 +563,8 @@ local function DFWSR_fake_script() -- script3.LocalScript
 		script.Parent.Parent.script7.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
 	end)
 end
-coroutine.wrap(DFWSR_fake_script)()
-local function UGBBAZW_fake_script() -- script4.LocalScript 
+coroutine.wrap(DKOPPSF_fake_script)()
+local function SZYKZ_fake_script() -- script4.LocalScript 
 	local script = Instance.new('LocalScript', script4)
 
 	local Button = script.Parent
@@ -581,8 +581,8 @@ local function UGBBAZW_fake_script() -- script4.LocalScript
 		script.Parent.Parent.script7.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
 	end)
 end
-coroutine.wrap(UGBBAZW_fake_script)()
-local function MEEHDYC_fake_script() -- script7.LocalScript 
+coroutine.wrap(SZYKZ_fake_script)()
+local function BAUZHUE_fake_script() -- script7.LocalScript 
 	local script = Instance.new('LocalScript', script7)
 
 	local Button = script.Parent
@@ -599,8 +599,8 @@ local function MEEHDYC_fake_script() -- script7.LocalScript
 		script.Parent.Parent.script1.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
 	end)
 end
-coroutine.wrap(MEEHDYC_fake_script)()
-local function PEFISN_fake_script() -- script6.LocalScript 
+coroutine.wrap(BAUZHUE_fake_script)()
+local function RSLMSQQ_fake_script() -- script6.LocalScript 
 	local script = Instance.new('LocalScript', script6)
 
 	local Button = script.Parent
@@ -617,8 +617,8 @@ local function PEFISN_fake_script() -- script6.LocalScript
 		script.Parent.Parent.script7.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
 	end)
 end
-coroutine.wrap(PEFISN_fake_script)()
-local function BVTS_fake_script() -- script5.LocalScript 
+coroutine.wrap(RSLMSQQ_fake_script)()
+local function BSVBQ_fake_script() -- script5.LocalScript 
 	local script = Instance.new('LocalScript', script5)
 
 	local Button = script.Parent
@@ -635,8 +635,8 @@ local function BVTS_fake_script() -- script5.LocalScript
 		script.Parent.Parent.script7.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
 	end)
 end
-coroutine.wrap(BVTS_fake_script)()
-local function MSJJCX_fake_script() -- Clear.LocalScript 
+coroutine.wrap(BSVBQ_fake_script)()
+local function GNYZJSA_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	local Button = script.Parent
@@ -647,8 +647,8 @@ local function MSJJCX_fake_script() -- Clear.LocalScript
 		
 	end)
 end
-coroutine.wrap(MSJJCX_fake_script)()
-local function VCOZKPL_fake_script() -- FrameSet.LocalScript 
+coroutine.wrap(GNYZJSA_fake_script)()
+local function VIUAQOC_fake_script() -- FrameSet.LocalScript 
 	local script = Instance.new('LocalScript', FrameSet)
 
 	local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
@@ -671,8 +671,8 @@ local function VCOZKPL_fake_script() -- FrameSet.LocalScript
 	
 	
 end
-coroutine.wrap(VCOZKPL_fake_script)()
-local function YOUQOYY_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(VIUAQOC_fake_script)()
+local function QPMNOZI_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local Button = script.Parent
@@ -683,8 +683,8 @@ local function YOUQOYY_fake_script() -- TextButton.LocalScript
 		print(script.Parent.Parent.HWID.Text)
 	end)
 end
-coroutine.wrap(YOUQOYY_fake_script)()
-local function DUKDZKS_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(QPMNOZI_fake_script)()
+local function UYLJ_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local kkshit = "sex"
@@ -704,8 +704,8 @@ local function DUKDZKS_fake_script() -- TextButton_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(DUKDZKS_fake_script)()
-local function VQUFGQB_fake_script() -- GUIezsploit.LocalScript 
+coroutine.wrap(UYLJ_fake_script)()
+local function XVFS_fake_script() -- GUIezsploit.LocalScript 
 	local script = Instance.new('LocalScript', GUIezsploit)
 
 	script.Parent.Parent.GUIezsploit.ResetOnSpawn = false
@@ -732,4 +732,4 @@ local function VQUFGQB_fake_script() -- GUIezsploit.LocalScript
 	
 	
 end
-coroutine.wrap(VQUFGQB_fake_script)()
+coroutine.wrap(XVFS_fake_script)()

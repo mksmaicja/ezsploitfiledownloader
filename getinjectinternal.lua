@@ -9,13 +9,15 @@ local telscrt = [[
 
 queueonteleport(telscrt)
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/mikusgszyp/ezsploitfiledownloader/main/internal.lua", true))()
+
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local _1 = Instance.new("TextLabel")
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Frame.BackgroundTransparency = 0.250
@@ -40,7 +42,7 @@ wait(2.5)
 
 _1.Text = "'insert' to open UI"
 
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mikusgszyp/ezsploitfiledownloader/main/internal.lua", true))()
 
 wait(2.5)
 Frame:Destroy()

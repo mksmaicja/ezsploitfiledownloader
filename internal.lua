@@ -5,6 +5,8 @@ local TopFrame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local leftframe = Instance.new("Frame")
 local TextLabel_2 = Instance.new("TextLabel")
+local Codebutton = Instance.new("ImageButton")
+local SettButton = Instance.new("ImageButton")
 local Frame = Instance.new("Frame")
 local TextBox = Instance.new("TextBox")
 local Execute = Instance.new("TextButton")
@@ -17,6 +19,15 @@ local script6 = Instance.new("TextButton")
 local script5 = Instance.new("TextButton")
 local Clear = Instance.new("TextButton")
 local ImageLabel = Instance.new("ImageLabel")
+local FrameSet = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local DisplayName = Instance.new("TextLabel")
+local UserName = Instance.new("TextLabel")
+local HWID = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local WATERMARK = Instance.new("Frame")
+local WATERlabel = Instance.new("TextLabel")
 
 --Properties:
 
@@ -58,14 +69,31 @@ TextLabel_2.BorderSizePixel = 0
 TextLabel_2.Position = UDim2.new(0.122448981, 0, 0.903797507, 0)
 TextLabel_2.Size = UDim2.new(0, 43, 0, 38)
 TextLabel_2.Font = Enum.Font.SourceSans
-TextLabel_2.Text = "V2.1"
+TextLabel_2.Text = "V2.2"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextSize = 24.000
+
+Codebutton.Name = "Code button"
+Codebutton.Parent = leftframe
+Codebutton.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Codebutton.BorderSizePixel = 0
+Codebutton.Position = UDim2.new(0.0204081628, 0, 0.200000003, 0)
+Codebutton.Size = UDim2.new(0, 48, 0, 48)
+Codebutton.Image = "rbxassetid://13737518565"
+
+SettButton.Name = "Sett Button"
+SettButton.Parent = leftframe
+SettButton.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+SettButton.BorderSizePixel = 0
+SettButton.Position = UDim2.new(0.0204081628, 0, 0.336708844, 0)
+SettButton.Size = UDim2.new(0, 48, 0, 48)
+SettButton.Image = "rbxassetid://13737525150"
 
 Frame.Parent = MainBorder
 Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
 Frame.Position = UDim2.new(0.0705563128, 0, 0.0987341776, 0)
 Frame.Size = UDim2.new(0, 685, 0, 356)
+Frame.Visible = false
 
 TextBox.Parent = Frame
 TextBox.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
@@ -172,12 +200,101 @@ Clear.TextSize = 14.000
 
 ImageLabel.Parent = MainBorder
 ImageLabel.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+ImageLabel.BorderSizePixel = 0
 ImageLabel.Size = UDim2.new(0, 50, 0, 50)
 ImageLabel.Image = "rbxassetid://13733883347"
 
+FrameSet.Name = "FrameSet"
+FrameSet.Parent = MainBorder
+FrameSet.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+FrameSet.Position = UDim2.new(0.0709999949, 0, 0.0989999473, 0)
+FrameSet.Size = UDim2.new(0, 684, 0, 356)
+
+TextLabel_3.Parent = FrameSet
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Size = UDim2.new(0, 84, 0, 29)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "UserInfo:"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 14.000
+
+DisplayName.Name = "DisplayName"
+DisplayName.Parent = FrameSet
+DisplayName.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+DisplayName.BorderSizePixel = 0
+DisplayName.Position = UDim2.new(0, 0, 0.0814606771, 0)
+DisplayName.Size = UDim2.new(0, 683, 0, 29)
+DisplayName.Font = Enum.Font.SourceSans
+DisplayName.Text = "Display Name:"
+DisplayName.TextColor3 = Color3.fromRGB(255, 255, 255)
+DisplayName.TextSize = 14.000
+DisplayName.TextXAlignment = Enum.TextXAlignment.Left
+
+UserName.Name = "UserName"
+UserName.Parent = FrameSet
+UserName.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+UserName.BorderSizePixel = 0
+UserName.Position = UDim2.new(0, 0, 0.140449435, 0)
+UserName.Size = UDim2.new(0, 680, 0, 23)
+UserName.Font = Enum.Font.SourceSans
+UserName.Text = "User Name:"
+UserName.TextColor3 = Color3.fromRGB(255, 255, 255)
+UserName.TextSize = 14.000
+UserName.TextXAlignment = Enum.TextXAlignment.Left
+
+HWID.Name = "HWID"
+HWID.Parent = FrameSet
+HWID.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+HWID.BorderSizePixel = 0
+HWID.Position = UDim2.new(0, 0, 0.196629211, 0)
+HWID.Size = UDim2.new(0, 680, 0, 23)
+HWID.Font = Enum.Font.SourceSans
+HWID.Text = "User whitelist ID:"
+HWID.TextColor3 = Color3.fromRGB(255, 255, 255)
+HWID.TextSize = 14.000
+HWID.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton.Parent = FrameSet
+TextButton.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+TextButton.Position = UDim2.new(0.106725149, 0, 0, 0)
+TextButton.Size = UDim2.new(0, 115, 0, 29)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Print in console (F9)"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14.000
+
+TextButton_2.Parent = FrameSet
+TextButton_2.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+TextButton_2.Position = UDim2.new(0, 0, 0.915730357, 0)
+TextButton_2.Size = UDim2.new(0, 83, 0, 29)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Watermark"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 14.000
+
+WATERMARK.Name = "WATERMARK"
+WATERMARK.Parent = GUIezsploit
+WATERMARK.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+WATERMARK.BorderSizePixel = 0
+WATERMARK.Position = UDim2.new(0, 0, 0.960099757, 0)
+WATERMARK.Size = UDim2.new(0, 134, 0, 32)
+
+WATERlabel.Name = "WATERlabel"
+WATERlabel.Parent = WATERMARK
+WATERlabel.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+WATERlabel.BorderSizePixel = 0
+WATERlabel.Position = UDim2.new(-0.0149253728, 0, 0.0625, 0)
+WATERlabel.Size = UDim2.new(0, 136, 0, 30)
+WATERlabel.Font = Enum.Font.SourceSans
+WATERlabel.Text = "powered by EzSploit"
+WATERlabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+WATERlabel.TextSize = 14.000
+WATERlabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
 -- Scripts:
 
-local function MRQRCKW_fake_script() -- MainBorder.Drag 
+local function BQFBXR_fake_script() -- MainBorder.Drag 
 	local script = Instance.new('LocalScript', MainBorder)
 
 	script.Parent.Active = true
@@ -185,8 +302,8 @@ local function MRQRCKW_fake_script() -- MainBorder.Drag
 	
 	
 end
-coroutine.wrap(MRQRCKW_fake_script)()
-local function KRTWKIR_fake_script() -- MainBorder.OpenClose 
+coroutine.wrap(BQFBXR_fake_script)()
+local function EHTNE_fake_script() -- MainBorder.OpenClose 
 	local script = Instance.new('LocalScript', MainBorder)
 
 	local Open = true
@@ -207,10 +324,35 @@ local function KRTWKIR_fake_script() -- MainBorder.OpenClose
 		end
 	end)
 end
-coroutine.wrap(KRTWKIR_fake_script)()
-local function VISZH_fake_script() -- TextBox.LocalScript 
+coroutine.wrap(EHTNE_fake_script)()
+local function ZPSNQC_fake_script() -- Codebutton.LocalScript 
+	local script = Instance.new('LocalScript', Codebutton)
+
+	local Button = script.Parent
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		script.Parent.Parent.Parent.Frame.Visible = true
+		script.Parent.Parent.Parent.FrameSet.Visible = false
+	end)
+end
+coroutine.wrap(ZPSNQC_fake_script)()
+local function OGMHP_fake_script() -- SettButton.LocalScript 
+	local script = Instance.new('LocalScript', SettButton)
+
+	local Button = script.Parent
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		script.Parent.Parent.Parent.Frame.Visible = false
+		script.Parent.Parent.Parent.FrameSet.Visible = true
+	end)
+end
+coroutine.wrap(OGMHP_fake_script)()
+local function FDXGPG_fake_script() -- TextBox.LocalScript 
 	local script = Instance.new('LocalScript', TextBox)
 
+	script.Parent.Parent.Parent.Frame.Visible = true
+	script.Parent.Parent.Parent.FrameSet.Visible = false
+	
 	local folderex = false
 	folderex = isfolder("ezsploit")
 	
@@ -352,8 +494,8 @@ local function VISZH_fake_script() -- TextBox.LocalScript
 		
 	until (false)
 end
-coroutine.wrap(VISZH_fake_script)()
-local function BEAV_fake_script() -- Execute.LocalScript 
+coroutine.wrap(FDXGPG_fake_script)()
+local function CEJSSO_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local Button = script.Parent
@@ -364,8 +506,8 @@ local function BEAV_fake_script() -- Execute.LocalScript
 		
 	end)
 end
-coroutine.wrap(BEAV_fake_script)()
-local function DLWHJYM_fake_script() -- script1.LocalScript 
+coroutine.wrap(CEJSSO_fake_script)()
+local function ZKULT_fake_script() -- script1.LocalScript 
 	local script = Instance.new('LocalScript', script1)
 
 	local Button = script.Parent
@@ -382,8 +524,8 @@ local function DLWHJYM_fake_script() -- script1.LocalScript
 		script.Parent.Parent.script7.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
 	end)
 end
-coroutine.wrap(DLWHJYM_fake_script)()
-local function JDZPDH_fake_script() -- script2.LocalScript 
+coroutine.wrap(ZKULT_fake_script)()
+local function MPWMK_fake_script() -- script2.LocalScript 
 	local script = Instance.new('LocalScript', script2)
 
 	local Button = script.Parent
@@ -400,8 +542,8 @@ local function JDZPDH_fake_script() -- script2.LocalScript
 		script.Parent.Parent.script7.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
 	end)
 end
-coroutine.wrap(JDZPDH_fake_script)()
-local function DWEDSJG_fake_script() -- script3.LocalScript 
+coroutine.wrap(MPWMK_fake_script)()
+local function NOJY_fake_script() -- script3.LocalScript 
 	local script = Instance.new('LocalScript', script3)
 
 	local Button = script.Parent
@@ -418,8 +560,8 @@ local function DWEDSJG_fake_script() -- script3.LocalScript
 		script.Parent.Parent.script7.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
 	end)
 end
-coroutine.wrap(DWEDSJG_fake_script)()
-local function UTYI_fake_script() -- script4.LocalScript 
+coroutine.wrap(NOJY_fake_script)()
+local function GAGRL_fake_script() -- script4.LocalScript 
 	local script = Instance.new('LocalScript', script4)
 
 	local Button = script.Parent
@@ -436,8 +578,8 @@ local function UTYI_fake_script() -- script4.LocalScript
 		script.Parent.Parent.script7.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
 	end)
 end
-coroutine.wrap(UTYI_fake_script)()
-local function BRTX_fake_script() -- script7.LocalScript 
+coroutine.wrap(GAGRL_fake_script)()
+local function RMIFSV_fake_script() -- script7.LocalScript 
 	local script = Instance.new('LocalScript', script7)
 
 	local Button = script.Parent
@@ -454,8 +596,8 @@ local function BRTX_fake_script() -- script7.LocalScript
 		script.Parent.Parent.script1.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
 	end)
 end
-coroutine.wrap(BRTX_fake_script)()
-local function VEFRRP_fake_script() -- script6.LocalScript 
+coroutine.wrap(RMIFSV_fake_script)()
+local function OTBPQY_fake_script() -- script6.LocalScript 
 	local script = Instance.new('LocalScript', script6)
 
 	local Button = script.Parent
@@ -472,8 +614,8 @@ local function VEFRRP_fake_script() -- script6.LocalScript
 		script.Parent.Parent.script7.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
 	end)
 end
-coroutine.wrap(VEFRRP_fake_script)()
-local function YAPUC_fake_script() -- script5.LocalScript 
+coroutine.wrap(OTBPQY_fake_script)()
+local function RLDM_fake_script() -- script5.LocalScript 
 	local script = Instance.new('LocalScript', script5)
 
 	local Button = script.Parent
@@ -490,8 +632,8 @@ local function YAPUC_fake_script() -- script5.LocalScript
 		script.Parent.Parent.script7.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
 	end)
 end
-coroutine.wrap(YAPUC_fake_script)()
-local function YNTORIO_fake_script() -- Clear.LocalScript 
+coroutine.wrap(RLDM_fake_script)()
+local function NLKNEF_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	local Button = script.Parent
@@ -502,4 +644,80 @@ local function YNTORIO_fake_script() -- Clear.LocalScript
 		
 	end)
 end
-coroutine.wrap(YNTORIO_fake_script)()
+coroutine.wrap(NLKNEF_fake_script)()
+local function CNGNT_fake_script() -- FrameSet.LocalScript 
+	local script = Instance.new('LocalScript', FrameSet)
+
+	local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
+		
+	local player = game.Players.LocalPlayer
+	
+	if player then
+		script.Parent.DisplayName.Text = "Display name: "..player.DisplayName..""
+		script.Parent.UserName.Text = "Username: "..player.Name..""
+		script.Parent.HWID.Text = "Roblox HWID: "..HWID..""
+	end
+	
+	repeat
+		if player then
+			script.Parent.DisplayName.Text = "Display name: "..player.DisplayName..""
+			script.Parent.UserName.Text = "Username: "..player.Name..""
+			script.Parent.HWID.Text = "Roblox HWID: "..HWID..""
+		end
+	until (player)
+	
+	
+end
+coroutine.wrap(CNGNT_fake_script)()
+local function DSII_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local Button = script.Parent
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		print(script.Parent.Parent.DisplayName.Text)
+		print(script.Parent.Parent.UserName.Text)
+		print(script.Parent.Parent.HWID.Text)
+	end)
+end
+coroutine.wrap(DSII_fake_script)()
+local function WSYLEG_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	local Button = script.Parent
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		if (readfile("ezsploit\\watermark.txt") == "off") then
+			script.Parent.WATERMARK.Visible = true
+			writefile("ezsploit\\watermark.txt", "on")
+		elseif (readfile("ezsploit\\watermark.txt") == "on") then
+			script.Parent.WATERMARK.Visible = false
+			writefile("ezsploit\\watermark.txt", "off")
+			
+		end
+	end)
+end
+coroutine.wrap(WSYLEG_fake_script)()
+local function FHSBR_fake_script() -- GUIezsploit.LocalScript 
+	local script = Instance.new('LocalScript', GUIezsploit)
+
+	script.Parent.WATERMARK.Transparency = 1
+	script.Parent.WATERMARK.WATERlabel.Transparency = 0.6
+	
+	local watermark = false
+	watermark = isfile("ezsploit\\watermark.txt")
+	
+	if (watermark == false) then
+		writefile("ezsploit\\watermark.txt", "off")
+	end
+	
+	if (readfile("ezsploit\\watermark.txt") == "off") then
+		script.Parent.WATERMARK.Visible = false
+	end
+	
+	if (readfile("ezsploit\\watermark.txt") == "on") then
+		script.Parent.WATERMARK.Visible = true
+	end
+	
+end
+coroutine.wrap(FHSBR_fake_script)()

@@ -42,9 +42,7 @@ wait(2.5)
 
 _1.Text = "'insert' to open UI"
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/mikusgszyp/ezsploitfiledownloader/main/internal.lua", true))()
-
 wait(2.5)
 Frame:Destroy()
 _1:Destroy()
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mikusgszyp/ezsploitfiledownloader/main/internal.lua", true))()

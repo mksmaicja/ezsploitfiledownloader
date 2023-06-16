@@ -36,10 +36,6 @@ _1.TextSize = 23.000
 
 wait(2.5)
 
-_1.Text = "EzSploit by mikusdev"
-
-wait(2.5)
-
 _1.Text = "'insert' to open UI"
 
 wait(2.5)

@@ -32,13 +32,5 @@ _1.TextColor3 = Color3.fromRGB(250, 250, 250)
 _1.TextSize = 23.000
 
 wait(2.5)
-
-_1.Text = "EzSploit by mikusdev"
-
-wait(2.5)
-
-_1.Text = "Script by nicknamez"
-
-wait(2.5)
 Frame:Destroy()
 _1:Destroy()
